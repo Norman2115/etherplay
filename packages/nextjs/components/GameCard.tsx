@@ -16,8 +16,10 @@ export default function GameCard({ image, title, genre, price }: GameCardProps) 
       </div>
       <div className="flex flex-col space-y-3 p-4">
         <h3 className="text-lg font-bold">{title}</h3>
-        <p className="text-sm text-gray-400">{price}</p>
-        <p className="text-sm text-gray-400">{genre}</p>
+        <p className="text-sm text-white">{price}</p>
+        <div className="flex items-center">
+          <p className="text-sm text-white bg-gray-300 bg-opacity-20 rounded-md px-3 py-1">{genre}</p>
+        </div>
       </div>
     </div>
   );
